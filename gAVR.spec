@@ -25,10 +25,11 @@ Graficzny programator dla mikrokontrolerów AVR Atmela.
 %prep
 %setup -q
 
+sed -i -e 's#\$(top_builddir)/\$(MKINSTALLDIRS)#$(MKINSTALLDIRS)#' \
+	po/Makefile.in.in
+
 %build
 cp -f /usr/share/automake/config.* .
-sed -i -e 's#$(top_builddir)/$(MKINSTALLDIRS)#$(MKINSTALLDIRS)#' \
-	po/Makefile.in.in
 %configure
 %{__make}
 
