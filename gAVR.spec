@@ -24,6 +24,8 @@ Graficzny programator dla mikrokontrolerów AVR Atmela.
 %patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.* .
+
 %configure
 %{__make}
 
