@@ -6,5 +6,5 @@ Comment[pl]=Szeregowy programator dla mikrokontrolerów AVR Atmela
 Exec=gavr
 Terminal=false
 Type=Application
-Categories=Utility;Electronics;
+Categories=GTK;Utility;Electronics;
 # vi: encoding=utf-8
