@@ -2,7 +2,7 @@ Summary:	Serial programmer for Atmel AVR microcontrollers
 Summary(pl):	Szeregowy programator dla mikrokontrolerów AVR Atmela
 Name:		gAVR
 Version:	0.3
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/gavr/%{name}-%{version}.tar.gz
