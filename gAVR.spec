@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/gavr/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://pvdb.dse.nl/electronics/gAVR.html
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	libgnomeui >= 2.0.0
 ExcludeArch:	sparc sparc64 sparcv9 ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
