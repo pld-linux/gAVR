@@ -12,6 +12,7 @@ Patch0:		%{name}-sparc.patch
 URL:		http://pvdb.dse.nl/electronics/gAVR.html
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	libgnomeui >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
