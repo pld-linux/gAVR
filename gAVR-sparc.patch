@@ -4,7 +4,7 @@
  #include <string.h>
  
  #ifdef GLIBC
-+#ifndef _sparc_
++#ifndef __sparc__
  #include <sys/io.h>
 +#endif
  #else
