@@ -1,17 +1,18 @@
 Summary:	Serial programmer for Atmel AVR microcontrollers
 Summary(pl):	Szeregowy programator dla mikrokontrolerów AVR Atmela
 Name:		gAVR
-Version:	0.4
-Release:	0.2
+Version:	0.5
+Release:	0.1
 License:	GPL
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/gavr/%{name}-%{version}.tar.gz
-# Source0-md5:	40aec04e8cd90c5a4a37b855ec70ec14
+# Source0-md5:	2de5ae70ae56e015287be6b714ea5624
 Source1:	%{name}.desktop
 URL:		http://pvdb.dse.nl/electronics/gAVR.html
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	libgnomeui-devel >= 2.0.0
+BuildRequires:	sed >= 4.0
 ExcludeArch:	sparc sparc64 sparcv9 ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +27,8 @@ Graficzny programator dla mikrokontrolerów AVR Atmela.
 
 %build
 cp -f /usr/share/automake/config.* .
-
+sed -i -e 's#$(top_builddir)/$(MKINSTALLDIRS)#$(MKINSTALLDIRS)#' \
+	po/Makefile.in.in
 %configure
 %{__make}
 
