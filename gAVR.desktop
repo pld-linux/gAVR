@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=gAVR
+Comment=Serial programmer for Atmel AVR microcontrollers
+Comment[pl]=Szeregowy programator dla mikrokontrolerów AVR Atmela
+Exec=gavr
+Terminal=false
+Type=Application
+Categories=Development;Electronics;Engineering;
+# vi: encoding=utf-8
