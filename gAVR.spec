@@ -10,7 +10,8 @@ Source0:	http://dl.sourceforge.net/gavr/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-typo_fix.patch
 URL:		http://pvdb.dse.nl/electronics/gAVR.html
-BuildRequires:	gtk+2-devel
+BuildRequires:	automake
+BuildRequires:	gtk+2-devel >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
