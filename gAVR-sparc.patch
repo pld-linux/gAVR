@@ -1,0 +1,12 @@
+--- gAVR-0.3/src/main.c~	2004-09-29 19:25:30.000000000 +0200
++++ gAVR-0.3/src/main.c	2004-09-29 19:25:30.000000000 +0200
+@@ -29,7 +29,9 @@
+ #include <string.h>
+ 
+ #ifdef GLIBC
++#ifndef _sparc_
+ #include <sys/io.h>
++#endif
+ #else
+ #include <asm/io.h>
+ #endif
