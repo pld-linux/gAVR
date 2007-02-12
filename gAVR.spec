@@ -1,5 +1,5 @@
 Summary:	Serial programmer for Atmel AVR microcontrollers
-Summary(pl):	Szeregowy programator dla mikrokontrolerów AVR Atmela
+Summary(pl.UTF-8):   Szeregowy programator dla mikrokontrolerÃ³w AVR Atmela
 Name:		gAVR
 Version:	0.5
 Release:	0.1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Graphical programmer for Atmel AVR microcontrollers.
 
-%description -l pl
-Graficzny programator dla mikrokontrolerów AVR Atmela.
+%description -l pl.UTF-8
+Graficzny programator dla mikrokontrolerÃ³w AVR Atmela.
 
 %prep
 %setup -q
